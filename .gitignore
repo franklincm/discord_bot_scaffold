@@ -1,0 +1,8 @@
+.env
+build/
+dist/
+*.egg-info
+*.egg
+poetry.lock
+__pycache__
+TODO
