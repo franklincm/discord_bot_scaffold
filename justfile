@@ -8,8 +8,11 @@ install:
 requirements: install
   poetry export -f requirements.txt > requirements.txt
 
-run tag='scaffold': requirements
+build tag='scaffold': requirements
   docker build -t {{tag}} .
+
+run tag='scaffold': build
+  docker run -d {{tag}}:latest
 
 stop tag='scaffold':
   docker stop {{tag}}
