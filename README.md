@@ -17,7 +17,7 @@ DICORD_BOT_SECRET=YOURTOKENHERE
 ### Python(3) 
 
 1. Install [poetry](https://python-poetry.org/docs/#installation)
->> 1.1 Optionally run `pip install -r requirements.txt`
+> 1.1 Optionally run `pip install -r requirements.txt`
 2. In the root folder, run `poetry install`
 3. Finally, run `poetry run python -m scaffold`
 
